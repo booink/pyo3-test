@@ -1,0 +1,12 @@
+[package]
+name = "pyo3_test"
+version = "0.1.0"
+authors = ["booink <booink.work@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "pyo3_test"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.13.1", extension-module = ["extension-module"], default = ["extension-module"] }

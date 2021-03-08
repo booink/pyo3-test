@@ -1,0 +1,7 @@
+version: '3'
+services:
+  pyo3_test:
+    build:
+      context: .
+    volumes:
+      - .:/app
