@@ -29,6 +29,7 @@ RUN apt-get update \
   && locale-gen
 
 RUN rustup component add clippy
+RUN rustup toolchain install nightly
 RUN cargo install cargo-watch cargo-make cargo-expand cargo-clippy
 
 WORKDIR /app
